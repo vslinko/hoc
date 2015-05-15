@@ -1,5 +1,27 @@
 {
   "name": "hoc",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "description": "Higher-order Components Helpers",
+  "keywords": [
+    "react",
+    "component",
+    "components",
+    "hoc",
+    "higher-order component",
+    "higher-order components",
+    "decorator",
+    "decorators"
+  ],
+  "homepage": "https://github.com/vslinko/hoc",
+  "license": "MIT",
+  "author": {
+    "name": "Vyacheslav Slinko",
+    "email": "vslinko@yahoo.com",
+    "url": "http://vslinko.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vslinko/hoc.git"
+  },
   "dependencies": {}
 }
