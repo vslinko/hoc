@@ -12,4 +12,12 @@ function hoc(WrappedComponent, WrapperComponent) {
   return WrapperComponent;
 }
 
+function hocDecorator(decorator) {
+  return function(WrappedComponent) {
+    var WrapperComponent = decorator(WrappedComponent);
+    return hoc(WrappedComponent, WrapperComponent);
+  };
+}
+
 module.exports = hoc;
+module.exports.hocDecorator = hocDecorator;
