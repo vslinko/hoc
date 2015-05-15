@@ -4,6 +4,18 @@ Higher-order component is awesome way to extend components functionality.
 But higher-order components have one nasty problem — we have no access to wrapped component.
 This small module tries to solve that problem.
 
+## FAQ
+
+> Why do you need access to wrapped component?
+
+I'm using ES6 decorators to wrap my "dumb" components.
+Sometimes I want to render pure "dumb" components without any decorators.
+This module gives me access to pure component.
+
+> What is "dumb" component?
+
+Please read [this article](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0).
+
 ## API
 
 ### ES6
