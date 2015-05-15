@@ -21,7 +21,7 @@ Please read [this article](https://medium.com/@dan_abramov/smart-and-dumb-compon
 ### ES6
 
 ```js
-import {hocDecorator} from 'hoc';
+import {hocDecorator, getWrappedComponent} from 'hoc';
 
 const smartComponentDecorator = hocDecorator(Component => class SmartComponent {
   render() {
@@ -35,7 +35,7 @@ class DumbComponent {
 }
 
 console.log(DumbComponent.name); // SmartComponent
-console.log(DumbComponent.getWrappedComponent().name); // DumbComponent
+console.log(getWrappedComponent(DumbComponent).name); // DumbComponent
 ```
 
 ### ES5
@@ -54,5 +54,5 @@ var SmartComponent = hoc(DumbComponent, React.createClass({
 }))
 
 console.log(SmartComponent.displayName); // SmartComponent
-console.log(SmartComponent.getWrappedComponent().displayName); // DumbComponent
+console.log(hoc.getWrappedComponent(SmartComponent).displayName); // DumbComponent
 ```
